@@ -12,8 +12,8 @@ class Processor():
         transcript = result[0]
 
         if re.search(r'\btime\b', transcript, re.IGNORECASE):
-            time = self.time.time()
-            return transcript, time
+            current_time = self.time.time()
+            return transcript, current_time
         
         elif re.search(r'\bdate\b', transcript, re.IGNORECASE):
             date = self.time.date()
