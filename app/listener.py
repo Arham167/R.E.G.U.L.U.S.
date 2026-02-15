@@ -1,17 +1,18 @@
 import pvporcupine
 from pvrecorder import PvRecorder
-import struct
 
 class Listener():
     def __init__(self, access_key, keyword_path):
         self.porcupine = pvporcupine.create(
                     access_key = access_key,
-                    keyword_paths = [keyword_path]
+                    keyword_paths = [keyword_path],
+                    sensitivities = [1]
                     )
         self.recorder = PvRecorder(device_index = -1, frame_length = self.porcupine.frame_length)
     
     def listen(self):
         self.recorder.start()
+        print("listening")
 
         try:
             while True:
