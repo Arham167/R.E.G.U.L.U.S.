@@ -39,7 +39,6 @@ class Listener():
 
                         if silence_counter > max_silence_frames:
                             break
-                        
 
                     self.recorder.stop()
 
