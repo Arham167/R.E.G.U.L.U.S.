@@ -1,0 +1,4 @@
+dotenv
+pvporcupine
+pvrecorder
+pvleopard
