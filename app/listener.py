@@ -24,6 +24,7 @@ class Listener():
                     if index >= 0:
                         print("detected")
                         return
+                    
             except KeyboardInterrupt:
                 self.recorder.stop()
                 self.recorder.delete()

@@ -5,5 +5,7 @@ class Time():
         return datetime.datetime.now().time().strftime("%I:%M %p")
     
     def date(self):
-        return datetime.datetime.today().strftime("%b %d, %Y")
+        return datetime.datetime.today().strftime("%d-%b-%y")
     
+    def day(self):
+        return datetime.datetime.today().strftime("%A")
